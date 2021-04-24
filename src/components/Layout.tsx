@@ -3,7 +3,9 @@ import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
 import * as colors from "../types/ColorSystem";
 import DefaultSidebar from "./DefaultSidebar";
-import Logo, { LogoSpacer } from "./Logo";
+import Logo from "./Logo";
+import { Helmet } from "react-helmet";
+import Seo from "./seo";
 
 const GlobalStyle = createGlobalStyle`
 	${reset}
@@ -22,6 +24,13 @@ body {
 
 a {
 	color: ${colors.Blue.L500};
+	font-weight: 700;
+	text-decoration: none !important;
+
+	&.arrowed::before {
+		content: "↪";
+		margin-right: 0.5em;
+	}
 }
 
 // Layout
@@ -131,6 +140,7 @@ ol {
 const Layout = ({ children, sidebar }: any) => {
   return (
     <div id="the-container">
+      <Seo />
       <GlobalStyle theme="dark" />
       <div id="the-sidebar">
         <Logo />

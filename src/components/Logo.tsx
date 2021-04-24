@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import React, { CSSProperties } from "react";
 import styled from "styled-components";
 import { Blue, Orange, White } from "../types/ColorSystem";
@@ -116,7 +117,9 @@ const LogoStyles = styled.div`
 
 const Logo = ({ style }: { style?: CSSProperties }) => (
   <LogoStyles style={style}>
-    <Svg />
+    <Link to="/">
+      <Svg />
+    </Link>
   </LogoStyles>
 );
 

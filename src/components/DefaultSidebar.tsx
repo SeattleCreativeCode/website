@@ -14,10 +14,10 @@ type Props = {
 };
 
 const defaultNavLinks: NavLink[] = [
-  { text: "Members", to: "/members" },
-  { text: "Articles", to: "/articles" },
-  { text: "Events", to: "/events" },
-  { text: "Join Us", to: "/join" },
+  // { text: "Members", to: "/members" },
+  // { text: "Articles", to: "/articles" },
+  // { text: "Events", to: "/events" },
+  // { text: "Join Us", to: "/join" },
 ];
 
 const DefaultSidebar = ({ links = defaultNavLinks }: Props) => {
