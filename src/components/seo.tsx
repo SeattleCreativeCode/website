@@ -51,25 +51,27 @@ const Seo = ({ title, description, image, twitterHandle }: SeoDetails) => {
     plausibleId,
   };
   return (
-    <Helmet title={seo.title} titleTemplate={titleTemplate} defer={false}>
-      <meta name="description" content={seo.description} />
-      <meta name="image" content={seo.image} />
+    <>
+      <Helmet title={seo.title} titleTemplate={titleTemplate} defer={false}>
+        <meta name="description" content={seo.description} />
+        <meta name="image" content={seo.image} />
 
-      {seo.url && <meta property="og:url" content={seo.url} />}
+        {seo.url && <meta property="og:url" content={seo.url} />}
 
-      {/* og:type needs to be set */}
+        {/* og:type needs to be set */}
 
-      <meta property="og:title" content={seo.title} />
-      <meta property="og:description" content={seo.description} />
-      <meta property="og:image" content={seo.image} />
+        <meta property="og:title" content={seo.title} />
+        <meta property="og:description" content={seo.description} />
+        <meta property="og:image" content={seo.image} />
+        <script
+          async
+          defer
+          data-domain={seo.plausibleId}
+          src="https://plausible.io/js/plausible.js"
+        ></script>
+      </Helmet>
       <TwitterCard {...seo} />
-      <script
-        async
-        defer
-        data-domain={seo.plausibleId}
-        src="https://plausible.io/js/plausible.js"
-      ></script>
-    </Helmet>
+    </>
   );
 };
 
