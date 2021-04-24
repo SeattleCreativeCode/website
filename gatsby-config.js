@@ -4,7 +4,7 @@ module.exports = {
     description:
       "A cross-disciplinary group of artists and technologists who collaborate and hang out",
     titleTemplate: "%s × Seattle Creativ Code",
-    url: "https://seattlecreativecode.com",
+    siteUrl: "https://seattlecreativecode.com",
     plausibleId: "livecodeseattle.com",
   },
   plugins: [
