@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { Orange } from "../types/ColorSystem";
+import { Black, Blue, Orange, White } from "../types/ColorSystem";
+import { Typescale } from "../types/Typescale";
 
 type Props = {
   title: string;
@@ -13,7 +14,7 @@ type Props = {
 const Container = styled.div`
   display: grid;
   grid-template-rows: auto auto;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto;
   border: 2px solid ${Orange.L500};
   padding: 1.5rem;
   width: max-content;
@@ -25,7 +26,27 @@ const Container = styled.div`
   }
 
   & > .when {
+    font-size: ${Typescale.S_5};
+    line-height: 1.5em;
     font-style: italic;
+  }
+
+  & > .signup {
+    margin-top: 1rem;
+    border-radius: 8px;
+    background: ${Blue.L700};
+    width: fit-content;
+
+    &:hover {
+      background: ${Blue.L500};
+    }
+    & > a {
+      color: ${White.L000};
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 5px 1rem;
+    }
   }
 `;
 

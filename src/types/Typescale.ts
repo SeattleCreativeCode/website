@@ -1,4 +1,5 @@
 export enum Typescale {
+  S_5 = "0.701rem",
   S1 = "1rem",
   S1_5 = "1.309rem",
   S2 = "1.618rem",
