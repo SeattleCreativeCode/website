@@ -8,7 +8,12 @@ const MailingListSignup = () => {
         rel="stylesheet"
         type="text/css"
       />
-      <div id="mc_embed_signup">
+      <div
+        id="mc_embed_signup"
+        style={{
+          maxWidth: "70ch",
+        }}
+      >
         <form
           action="https://seattlecreativecode.us17.list-manage.com/subscribe/post?u=8a9cf5c1efd2bd9aa15de492e&amp;id=90ccaf1531"
           method="post"
@@ -40,6 +45,7 @@ const MailingListSignup = () => {
                 name="b_8a9cf5c1efd2bd9aa15de492e_90ccaf1531"
                 tabIndex={-1}
                 value=""
+                readOnly={true}
               />
             </div>
             <div className="clear">

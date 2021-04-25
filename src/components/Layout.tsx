@@ -95,6 +95,7 @@ h6 {
 p {
 	margin-top: 1.5rem;
 	margin-bottom: 1.5rem;
+	max-width: 60ch;
 }
 
 blockquote {
