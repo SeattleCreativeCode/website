@@ -52,7 +52,14 @@ const Seo = ({ title, description, image, twitterHandle }: SeoDetails) => {
   };
   return (
     <>
-      <Helmet title={seo.title} titleTemplate={titleTemplate} defer={false}>
+      <Helmet
+        title={seo.title}
+        titleTemplate={titleTemplate}
+        defer={false}
+        htmlAttributes={{
+          lang: "en",
+        }}
+      >
         <meta name="description" content={seo.description} />
         <meta name="image" content={seo.image} />
 

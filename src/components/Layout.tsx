@@ -2,9 +2,9 @@ import React from "react";
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
 import * as colors from "../types/ColorSystem";
+import { Typescale } from "../types/Typescale";
 import DefaultSidebar from "./DefaultSidebar";
 import Logo from "./Logo";
-import { Helmet } from "react-helmet";
 import Seo from "./seo";
 
 const GlobalStyle = createGlobalStyle`
@@ -44,6 +44,7 @@ a {
 
 #the-sidebar {
 	min-width: 30ch;
+	max-width: 30ch;
 	background: ${colors.Black.L900};
 	color: ${colors.White.L000};
 }
@@ -66,27 +67,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 6.854rem;
+	font-size: ${Typescale.S5};
 }
 
 h2 {
-	font-size: 4.236rem;
+	font-size: ${Typescale.S4};
 }
 
 h3 {
-	font-size: 2.618rem;
+	font-size: ${Typescale.S3};
 }
 
 h4 {
-	font-size: 1.618rem;
+	font-size: ${Typescale.S2};
 }
 
 h5 {
-	font-size: 1rem;
+	font-size: ${Typescale.S1};
 }
 
 h6 {
-	font-size: 1rem;
+	font-size: ${Typescale.S1};
 	font-weight: 500;
 	font-style: italic;
 }
@@ -144,6 +145,16 @@ const Layout = ({ children, sidebar }: any) => {
       <GlobalStyle theme="dark" />
       <div id="the-sidebar">
         <Logo />
+        <p
+          style={{
+            fontSize: Typescale.S1_5,
+            padding: "0 1rem",
+            hyphens: "auto",
+          }}
+        >
+          Seattle Creative Code is a small community of artists and
+          technologists who hang out, collaborate, and share ideas.
+        </p>
         {sidebar || <DefaultSidebar />}
       </div>
       <div id="the-content">{children}</div>
