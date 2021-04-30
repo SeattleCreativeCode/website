@@ -2,14 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Black, Blue, Orange, White } from "../types/ColorSystem";
 import { Typescale } from "../types/Typescale";
-
-type Props = {
-  title: string;
-  link: string;
-  repetition?: string;
-  date?: Date;
-  time: string;
-};
+import type { Event as EventType } from "../types/Event";
 
 const Container = styled.div`
   display: grid;
@@ -50,7 +43,7 @@ const Container = styled.div`
   }
 `;
 
-const Event = ({ title, link, repetition, date, time }: Props) => (
+const EventShort = ({ title, link, repetition, date, time }: EventType) => (
   <Container>
     <h4 className="title">{title}</h4>
     <div className="when">
@@ -65,5 +58,22 @@ const Event = ({ title, link, repetition, date, time }: Props) => (
     </div>
   </Container>
 );
+
+const EventLong = ({
+  title,
+  link,
+  repetition,
+  date,
+  time,
+  description,
+}: EventType) => <></>;
+
+const Event = ({ event, full }: { event: EventType; full: boolean }) => {
+  if (full) {
+    return <EventLong {...event} />;
+  } else {
+    return <EventShort {...event} />;
+  }
+};
 
 export default Event;

@@ -4,7 +4,7 @@ export enum Black {
 }
 
 export enum White {
-  L000 = "#FFFCF4",
+  L000 = "#FFFFF8",
   L300 = "#E9E6DF",
 }
 
