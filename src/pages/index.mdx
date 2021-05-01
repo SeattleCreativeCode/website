@@ -1,5 +1,7 @@
 import Event from "../components/Event";
+import { fromQuery } from "../types/Event";
 import MailingListSignup from "../components/MailingListSignup";
+import { graphql } from "gatsby";
 
 # JOIN US!
 
@@ -18,12 +20,7 @@ After joining, post an introduction in **#general** and show off some of your wo
 get together and hang out and talk about art, movement, creative coding and
 whatever else comes up.
 
-<Event
-  title="Seattle Open Lab"
-  link="https://calendar.google.com/event?action=TEMPLATE&tmeid=NGVuZTdsbmR0M3M2bDIzZzk3ZGhjZm82YnZfMjAyMTA0MjdUMDMwMDAwWiAwaDlncjc3dWFvMW43NGI3ZTA5OHZibnU5Y0Bn&tmsrc=0h9gr77uao1n74b7e098vbnu9c%40group.calendar.google.com&scp=ALL"
-  repetition="2nd & 4th Monday of the month"
-  time="8:00PM Pacific Time"
-/>
+<Event event={fromQuery(props.data.allMdx.nodes[0])} />
 
 ### 3. Join our mailing list
 
@@ -31,3 +28,25 @@ If you want to stay up to date on things like events and other happenings,
 you can join our low-volume mailing list by filling out the form below.
 
 <MailingListSignup />
+
+export const pageQuery = graphql`
+  query {
+    allMdx(filter: { slug: { eq: "seattle-open-lab" } }) {
+      nodes {
+        internal {
+          type
+        }
+        frontmatter {
+          repetition
+          time
+          link
+          date
+          title
+        }
+        id
+        slug
+        body
+      }
+    }
+  }
+`;

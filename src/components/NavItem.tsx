@@ -24,8 +24,10 @@ const MyLink = styled(Link)`
     &:after {
       content: ">";
       color: ${Orange.L500};
-      margin-left: 0.25em;
+      margin-left: 0.15em;
       font-size: 1.5rem;
+      position: absolute;
+      top: 0.15em;
     }
   }
 `;

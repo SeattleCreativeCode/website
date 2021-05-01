@@ -3,14 +3,18 @@ import styled from "styled-components";
 import { Black, Blue, Orange, White } from "../types/ColorSystem";
 import { Typescale } from "../types/Typescale";
 import type { Event as EventType } from "../types/Event";
+import { MDXRenderer } from "gatsby-plugin-mdx";
 
 const Container = styled.div`
   display: grid;
   grid-template-rows: auto auto;
   grid-template-columns: auto;
-  border: 2px solid ${Orange.L500};
   padding: 1.5rem;
-  width: max-content;
+
+  &.with-border {
+    border: 2px solid ${Orange.L500};
+    width: max-content;
+  }
 
   & > .title {
     grid-row-end: span 2;
@@ -43,36 +47,49 @@ const Container = styled.div`
   }
 `;
 
-const EventShort = ({ title, link, repetition, date, time }: EventType) => (
-  <Container>
-    <h4 className="title">{title}</h4>
-    <div className="when">
-      <div className="time">{time}</div>
-      {date && <div className="date">{date}</div>}
-      {repetition && <div className="repetition">{repetition}</div>}
-    </div>
-    <div className="signup">
-      <a href={link} className="arrowed">
-        Join Event
-      </a>
-    </div>
-  </Container>
-);
-
-const EventLong = ({
+const EventContents = ({
   title,
   link,
   repetition,
   date,
   time,
-  description,
-}: EventType) => <></>;
+  children,
+}: React.PropsWithChildren<EventType>) => (
+  <>
+    <h4 className="title">{title}</h4>
+    <div className="when">
+      <div className="time">{time.toLocaleTimeString("en-US")} Pacific</div>
+      {date && <div className="date">{date.toLocaleDateString("en-US")}</div>}
+      {repetition && <div className="repetition">{repetition.toText()}</div>}
+    </div>
+    {children}
+    <div className="signup">
+      <a href={link} className="arrowed">
+        Join Event
+      </a>
+    </div>
+  </>
+);
+
+const EventShort = ({ event }: { event: EventType }) => (
+  <Container className="with-border">
+    <EventContents {...event} />
+  </Container>
+);
+
+const EventLong = ({ event }: { event: EventType }) => (
+  <Container>
+    <EventContents {...event}>
+      <MDXRenderer>{event.description}</MDXRenderer>
+    </EventContents>
+  </Container>
+);
 
 const Event = ({ event, full }: { event: EventType; full: boolean }) => {
   if (full) {
-    return <EventLong {...event} />;
+    return <EventLong event={event} />;
   } else {
-    return <EventShort {...event} />;
+    return <EventShort event={event} />;
   }
 };
 
