@@ -139,10 +139,10 @@ ol {
 }
 `;
 
-const Layout = ({ children, sidebar }: any) => {
+const Layout = ({ children, sidebar, seo }: any) => {
   return (
     <div id="the-container">
-      <Seo />
+      <Seo {...seo} />
       <GlobalStyle theme="dark" />
       <div id="the-sidebar">
         <Logo />

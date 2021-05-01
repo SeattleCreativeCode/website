@@ -93,6 +93,10 @@ const Sidebar = () => (
   </>
 );
 
+const description = `We host regular events and many of our members twitch stream and teach
+classes online. This is where you can find all the happenings going on
+with Seattle Creative Code`;
+
 export default ({ data }: any) => {
   const [selectedItem, setSelectedItmem] = useState<EventType | undefined>(
     undefined
@@ -115,17 +119,13 @@ export default ({ data }: any) => {
   );
 
   return (
-    <Layout sidebar={<Sidebar />}>
+    <Layout sidebar={<Sidebar />} seo={{ title: "Events", description }}>
       <EventDetailModal
         event={selectedItem}
         onClose={() => setSelectedItmem(undefined)}
       />
       <h1>Events</h1>
-      <p style={{ marginBottom: Typescale.S3 }}>
-        We host regular events and many of our members twitch stream and teach
-        classes online. This is where you can find all the happenings going on
-        with Seattle Creative Code
-      </p>
+      <p style={{ marginBottom: Typescale.S3 }}>{description}</p>
       <CalendarContainer>
         <Calendar
           events={allEvents}
