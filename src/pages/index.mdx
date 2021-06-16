@@ -5,7 +5,7 @@ import { graphql } from "gatsby";
 
 # JOIN US!
 
-There are three ways that you can participate with Seattle Creative Code.
+There are two ways that you can participate with Seattle Creative Code.
 
 ### 1. Joining slack
 
@@ -14,39 +14,9 @@ Our slack is an open-invite slack. You can
 
 After joining, post an introduction in **#general** and show off some of your work in **#humblebrag**.
 
-### 2. Join us for Seattle Open Lab
-
-**Seattle Open Lab** is a semimonthly zoom call (for now) where artists and creators
-get together and hang out and talk about art, movement, creative coding and
-whatever else comes up.
-
-<Event event={fromQuery(props.data.allMdx.nodes[0])} />
-
-### 3. Join our mailing list
+### 2. Join our mailing list
 
 If you want to stay up to date on things like events and other happenings,
 you can join our low-volume mailing list by filling out the form below.
 
 <MailingListSignup />
-
-export const pageQuery = graphql`
-  query {
-    allMdx(filter: { slug: { eq: "seattle-open-lab" } }) {
-      nodes {
-        internal {
-          type
-        }
-        frontmatter {
-          repetition
-          time
-          link
-          date
-          title
-        }
-        id
-        slug
-        body
-      }
-    }
-  }
-`;
