@@ -60,13 +60,13 @@ module.exports = {
       },
       __key: "members",
     },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "events",
-        path: "./src/data/events/",
-      },
-      __key: "events",
-    },
+    // {
+    //   resolve: "gatsby-source-filesystem",
+    //   options: {
+    //     name: "events",
+    //     path: "./src/data/events/",
+    //   },
+    //   __key: "events",
+    // },
   ],
 };
