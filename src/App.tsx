@@ -43,6 +43,7 @@ function App() {
 
       <div className="map-Container">
         <IFrame
+          title="map-frame"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2690.003290181105!2d-122.33673119999999!3d47.606625699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906ab183ce5671%3A0x7103eb0386ec1705!2zMitV!5e0!3m2!1sen!2sus!4v1674813641384!5m2!1sen!2sus"
           width="600"
           height="450"
