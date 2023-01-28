@@ -3,7 +3,7 @@
   margin-top: 16px;
   margin-bottom: 16px;
   padding: 8px;
-  font-size: x-large;
+  font-size: medium;
 
   p {
     padding: 0px;
@@ -12,5 +12,12 @@
 
   p + p {
     padding-top: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* CSS in here for mobile only */
+  .countdown-timer {
+    font-size: small;
   }
 }
