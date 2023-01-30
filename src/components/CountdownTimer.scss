@@ -1,9 +1,7 @@
 .countdown-timer {
-  border: 1px solid white;
-  margin-top: 16px;
-  margin-bottom: 16px;
-  padding: 8px;
-  font-size: medium;
+  padding: .5em;
+  font-size: .75em;
+  color: #999;
 
   p {
     padding: 0px;
@@ -15,9 +13,9 @@
   }
 }
 
-@media (max-width: 768px) {
-  /* CSS in here for mobile only */
-  .countdown-timer {
-    font-size: small;
-  }
-}
+// @media (max-width: 768px) {
+//   /* CSS in here for mobile only */
+//   .countdown-timer {
+//     font-size: small;
+//   }
+// }
