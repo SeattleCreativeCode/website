@@ -16,40 +16,55 @@ function App() {
           technologists who hang out, collaborate, and share ideas.
         </div>
         <div className="links">
-          <a href="https://discord.gg/s4xZUfvp" target="_blank">Join us on Discord</a>
+          <a
+            href="https://discord.gg/s4xZUfvp"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Join us on Discord
+          </a>
         </div>
       </header>
 
       <section className="meetup centered">
-
         <h2>
-          Meetup and pop-up<br/>art show!
+          Meetup and pop-up
+          <br />
+          art show!
         </h2>
 
-        <div class="emoji">
-          💻 🎨 💾 🖌
-        </div>
+        <div className="emoji">💻 🎨 💾 🖌 🎵</div>
 
-        <div class="info">
-          Feb 25, 2023 6 pm - 10 pm <br/>
-          <a href="https://goo.gl/maps/j19KQDsMy2omedUV9" target="_blank"> Studio at 2+U, Downtown Seattle</a><br/>
+        <div className="info">
+          Feb 25, 2023 6 pm - 10 pm <br />
+          <a
+            href="https://goo.gl/maps/j19KQDsMy2omedUV9"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {' '}
+            Studio at 2+U, Downtown Seattle
+          </a>
+          <br />
         </div>
 
         <div>
-          <a href="https://bit.ly/art-code-seattle" className="rsvp-button copy">
+          <a
+            href="https://bit.ly/art-code-seattle"
+            className="rsvp-button copy"
+          >
             RSVP on EventBrite
           </a>
         </div>
 
         <CountdownTimer eventDate={new Date('2023-02-25T18:00:00-08:00')} />
-
       </section>
 
       <section className="directions centered copy">
         <h3>Getting to the meetup</h3>
         <p>
-          The venue is in downtown Seattle, and there are many bus lines that drop
-          off nearby. It's also one block away from the{' '}
+          The venue is in downtown Seattle, and there are many bus lines that
+          drop off nearby. It's also one block away from the{' '}
           <a href="https://goo.gl/maps/vC7RuFMRsF4X5d7c6">
             University Street Lightrail Station
           </a>
@@ -66,14 +81,10 @@ function App() {
         </div>
 
         <p>
-          There’s a parking garage located on Seneca St, between 1st and 2nd Ave.
-          But it's much cheaper to find parking on the street. Please note, the
-          garage is closed on weekends. Unfortunately, street parking has a
-          two-hour limit.
+          There's street parking available, but please note it has a two-hour
+          limit. The parking garage on Seneca St is closed on weekends.
         </p>
       </section>
-
-
 
       {/* 
       <!-- Maybe use the footer for links to instagram etc
