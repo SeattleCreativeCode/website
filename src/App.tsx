@@ -26,11 +26,11 @@ function App() {
           Meetup and pop-up<br/>art show!
         </h2>
 
-        <div class="emoji">
+        <div className="emoji">
           💻 🎨 💾 🖌
         </div>
 
-        <div class="info">
+        <div className="info">
           Feb 25, 2023 6 pm - 10 pm <br/>
           <a href="https://goo.gl/maps/j19KQDsMy2omedUV9" target="_blank"> Studio at 2+U, Downtown Seattle</a><br/>
         </div>
