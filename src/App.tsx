@@ -57,6 +57,18 @@ function App() {
           </a>
         </div>
 
+        <div>
+          <a
+            href="https://bit.ly/scc-call-for-art"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Use this form
+          </a>
+          {" "}
+          if you'd like to bring something to the meetup.
+        </div>
+
         <CountdownTimer eventDate={new Date('2023-02-25T18:00:00-08:00')} />
       </section>
 
