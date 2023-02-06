@@ -96,6 +96,10 @@ function App() {
           There's street parking available, but please note it has a two-hour
           limit. The parking garage on Seneca St is closed on weekends.
         </p>
+
+        <p>
+          Many thanks to <a href="https://shunpike.org/">shunpike.org</a> for providing us space!
+        </p>
       </section>
 
       {/* 
