@@ -17,7 +17,7 @@ function App() {
         </div>
         <div className="links">
           <a
-            href="https://discord.gg/s4xZUfvp"
+            href="https://discord.gg/2QXXH9MdV5"
             target="_blank"
             rel="noreferrer"
           >
@@ -36,7 +36,8 @@ function App() {
         <div className="emoji">💻 🎨 💾 🖌 🎵</div>
 
         <div className="info">
-          Feb 25, 2023 6 pm - 10 pm <br />
+          March 25, 2023 6 pm - 10 pm <br />
+          Doors at 7:00 pm <br />
           <a
             href="https://goo.gl/maps/j19KQDsMy2omedUV9"
             target="_blank"
@@ -50,7 +51,7 @@ function App() {
 
         <div>
           <a
-            href="https://bit.ly/art-code-seattle"
+            href="https://bit.ly/scc-mar25"
             className="rsvp-button copy"
           >
             RSVP on EventBrite
