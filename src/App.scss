@@ -72,6 +72,10 @@ body {
       }
     }
 
+    .links + .links {
+      padding-top: 0;
+    }
+
     .links {
       padding: 2rem 0;
     }

@@ -24,6 +24,15 @@ function App() {
             Join us on Discord
           </a>
         </div>
+        <div className="links">
+          <a
+            href="https://www.instagram.com/seattlecreativecoders/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Follow us on Instagram
+          </a>
+        </div>
       </header>
 
       <section className="meetup centered">
