@@ -1,6 +1,6 @@
 import './App.scss'
 import { ReactComponent as Logo } from './logo.svg'
-import CountdownTimer from './components/CountdownTimer'
+// import CountdownTimer from './components/CountdownTimer'
 import { IFrame } from './components/IFrame'
 
 function App() {
