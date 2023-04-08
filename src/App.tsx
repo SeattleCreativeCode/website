@@ -12,7 +12,7 @@ function App() {
         </div>
 
         <div>
-          <strong>Seattle Creative Coders</strong> is a community of artists and
+          <strong>Seattle Creative Code</strong> is a community of artists and
           technologists who hang out, collaborate, and share ideas.
         </div>
         <div className="links">
@@ -26,7 +26,7 @@ function App() {
         </div>
         <div className="links">
           <a
-            href="https://www.instagram.com/seattlecreativecoders/"
+            href="https://www.instagram.com/seattlecreativecode/"
             target="_blank"
             rel="noreferrer"
           >
@@ -45,7 +45,7 @@ function App() {
         <div className="emoji">💻 🎨 💾 🖌 🎵</div>
 
         <div className="info">
-          March 25, 2023 6 pm - 10 pm <br />
+          Apr 22, 2023 6 pm - 10 pm <br />
           Doors at 7:00 pm <br />
           <a
             href="https://goo.gl/maps/j19KQDsMy2omedUV9"
@@ -60,8 +60,10 @@ function App() {
 
         <div>
           <a
-            href="https://bit.ly/scc-mar25"
+            href="https://bit.ly/scc-apr-22"
+            target="_blank"
             className="rsvp-button copy"
+            rel="noreferrer"
           >
             RSVP on EventBrite
           </a>
@@ -69,17 +71,16 @@ function App() {
 
         <div>
           <a
-            href="https://bit.ly/scc-call-for-art"
+            href="https://bit.ly/scc-apr-22-call"
             target="_blank"
             rel="noreferrer"
           >
             Use this form
-          </a>
-          {" "}
+          </a>{' '}
           if you'd like to bring something to the meetup.
         </div>
 
-        <CountdownTimer eventDate={new Date('2023-02-25T18:00:00-08:00')} />
+        {/* <CountdownTimer eventDate={new Date('2023-04-22T19:00:00-08:00')} /> */}
       </section>
 
       <section className="directions centered copy">
@@ -103,12 +104,13 @@ function App() {
         </div>
 
         <p>
-          There's street parking available, but please note it has a two-hour
-          limit. The parking garage on Seneca St is closed on weekends.
+          There's some street parking available. The parking garage on Seneca St
+          is closed on weekends.
         </p>
 
         <p>
-          Many thanks to <a href="https://shunpike.org/">shunpike.org</a> for providing us space!
+          Many thanks to <a href="https://shunpike.org/">shunpike.org</a> for
+          providing us space!
         </p>
       </section>
 

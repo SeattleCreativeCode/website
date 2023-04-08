@@ -10,10 +10,10 @@ function timerRenderer(props: CountdownRenderProps) {
     // Render a countdown
     return (
       <span>
-        <strong>{props.days}</strong> days,
-        <strong>{props.hours}</strong> hours,
-        <strong>{props.minutes}</strong> minutes,
-        <strong>{props.seconds}</strong> seconds left.
+        <strong>{props.days}</strong> d,
+        <strong>{props.hours}</strong> h,
+        <strong>{props.minutes}</strong> m,
+        <strong>{props.seconds}</strong> s left.
       </span>
     )
   }
