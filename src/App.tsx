@@ -45,7 +45,7 @@ function App() {
         <div className="emoji">💻 🎨 💾 🖌 🎵</div>
 
         <div className="info">
-          Apr 22, 2023 6 pm - 10 pm <br />
+          May 27, 2023 6 pm - 10 pm <br />
           Doors at 7:00 pm <br />
           <a
             href="https://goo.gl/maps/j19KQDsMy2omedUV9"
@@ -60,7 +60,7 @@ function App() {
 
         <div>
           <a
-            href="https://bit.ly/scc-apr-22"
+            href="https://bit.ly/scc-may-27"
             target="_blank"
             className="rsvp-button copy"
             rel="noreferrer"
@@ -71,7 +71,7 @@ function App() {
 
         <div>
           <a
-            href="https://bit.ly/scc-apr-22-call"
+            href="https://bit.ly/scc-may-27-call"
             target="_blank"
             rel="noreferrer"
           >
