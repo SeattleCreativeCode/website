@@ -36,31 +36,34 @@ function App() {
       </header>
 
       <section className="meetup centered">
-        <h2>
+        {/* <h2>
           Meetup and pop-up
           <br />
           art show!
-        </h2>
+        </h2> */}
+
+        <h2>Casual July Meetup</h2>
 
         <div className="emoji">💻 🎨 💾 🖌 🎵</div>
 
         <div className="info">
-          May 27, 2023 6 pm - 10 pm <br />
-          Doors at 7:00 pm <br />
+          July 17, 2023 7 pm - 9 pm <br />
           <a
-            href="https://goo.gl/maps/j19KQDsMy2omedUV9"
+            href="https://goo.gl/maps/aLsAJyQXMTzfcYze6"
             target="_blank"
             rel="noreferrer"
           >
             {' '}
-            Studio at 2+U, Downtown Seattle
+            <br />
+            Optimism Brewing Company <br />
+            1158 Broadway, Seattle, WA 98122
           </a>
           <br />
         </div>
 
         <div>
           <a
-            href="https://bit.ly/scc-may-27"
+            href="https://bit.ly/scc-july-23"
             target="_blank"
             className="rsvp-button copy"
             rel="noreferrer"
@@ -69,7 +72,7 @@ function App() {
           </a>
         </div>
 
-        <div>
+        {/* <div>
           <a
             href="https://bit.ly/scc-may-27-call"
             target="_blank"
@@ -78,7 +81,7 @@ function App() {
             Use this form
           </a>{' '}
           if you'd like to bring something to the meetup.
-        </div>
+        </div> */}
 
         {/* <CountdownTimer eventDate={new Date('2023-04-22T19:00:00-08:00')} /> */}
       </section>
@@ -86,32 +89,21 @@ function App() {
       <section className="directions centered copy">
         <h3>Getting to the meetup</h3>
         <p>
-          The venue is in downtown Seattle, and there are many bus lines that
-          drop off nearby. It's also one block away from the{' '}
-          <a href="https://goo.gl/maps/vC7RuFMRsF4X5d7c6">
-            University Street Lightrail Station
-          </a>
-          .
+          Optimism Brewery is a spacious venue, and we will find a communal table to sit down and chat.
+          To find us, look for a sign (an ipad) with "Seattle Creative Code" on it.
+          <br />
+          <br />
+          Feel free to bring your laptops, trinkets, magical artifacts, 3D prints etc to share!
         </p>
 
         <div className="map-container">
           <IFrame
             title="map-frame"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2690.003290181105!2d-122.33673119999999!3d47.606625699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906ab183ce5671%3A0x7103eb0386ec1705!2zMitV!5e0!3m2!1sen!2sus!4v1674813641384!5m2!1sen!2sus"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.685743044264!2d-122.32272138436922!3d47.61279997918502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906acc07f09b89%3A0xaec46580d07fc936!2sOptimism%20Brewing%20Company!5e0!3m2!1sen!2sus!4v1689320285695!5m2!1sen!2sus"
             width="100%"
             height="auto"
           />
         </div>
-
-        <p>
-          There's some street parking available. The parking garage on Seneca St
-          is closed on weekends.
-        </p>
-
-        <p>
-          Many thanks to <a href="https://shunpike.org/">shunpike.org</a> for
-          providing us space!
-        </p>
       </section>
 
       {/* 
