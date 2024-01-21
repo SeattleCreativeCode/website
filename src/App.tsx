@@ -47,6 +47,9 @@ function App() {
         <div className="emoji">💻 🎨 💾 🖌 🎵</div>
 
         <div className="info">
+          Meetup/hack session about projection mapping.
+          <br />
+          <br />
           January 27, 2024 6 pm - 10 pm <br />
           <a
             href="https://goo.gl/maps/aLsAJyQXMTzfcYze6"
@@ -87,12 +90,14 @@ function App() {
       </section>
 
       <section className="directions centered copy">
-        <h3>Getting to the meetup</h3>
+        <h3>About the Meetup/Directions</h3>
         <p>
+          This meetup is about projection mapping.
+          We'll be bringing laptops/projectors, and trying out different techniques/ideas live.
+          Interested to participate in a future meetup? Join our discord and let us know!
+          <br />
+          <br />
           The venue is in downtown Seattle, one block away from the University Street Lightrail Station.
-          <br />
-          <br />
-          Join us to chat about projection mapping, art and technology. If you'd like to show your work at a future meetup, join our discord via https://seattlecreativecode.com
         </p>
 
         <div className="map-container">
