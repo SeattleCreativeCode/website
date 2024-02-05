@@ -42,15 +42,17 @@ function App() {
           Party!
         </h2> */}
 
-        <h2>Projection Party!!</h2>
+        <h2>Plotter Party</h2>
+        <h3>Robots that draw 🤖✒️</h3>
 
-        <div className="emoji">💻 🎨 💾 🖌 🎵</div>
+        {/* <div className="emoji">💻 🎨 💾 🖌 🎵</div> */}
+        {/* <div className="emoji">🤖✒️ Robots that draw</div> */}
 
         <div className="info">
-          Meetup/hack session about projection mapping.
+          Open house plotter art, tech & design show
           <br />
           <br />
-          January 27, 2024 6 pm - 10 pm <br />
+          February 8, 2024, 5 pm - 9 pm <br />
           <a
             href="https://goo.gl/maps/aLsAJyQXMTzfcYze6"
             target="_blank"
@@ -58,13 +60,14 @@ function App() {
           >
             {' '}
             <br />
-            The Studio at 2+U <br />
-            1203 2nd Ave, Seattle
+            Passable <br />
+            1005 E Union St, Seattle
+
           </a>
           <br />
         </div>
 
-        <div>
+        {/* <div>
           <a
             href="https://bit.ly/scc-jan-24"
             target="_blank"
@@ -73,7 +76,7 @@ function App() {
           >
             RSVP on EventBrite
           </a>
-        </div>
+        </div> */}
 
         {/* <div>
           <a
@@ -90,23 +93,31 @@ function App() {
       </section>
 
       <section className="directions centered copy">
-        <h3>About the Meetup/Directions</h3>
+        <h3>About/Directions</h3>
         <p>
-          This meetup is about projection mapping.
-          We'll be bringing laptops/projectors, and trying out different techniques/ideas live.
-          Interested to participate in a future meetup? Join our discord and let us know!
+          Organized by Passable and Seattle Creative Code,
+          this event showcases the work of local plotter artists/enthusiasts, with live plotting.
           <br />
           <br />
-          The venue is in downtown Seattle, one block away from the University Street Lightrail Station.
+          A plotter is a drawing machine that produces vector graphics drawings or paintings. Think of a robot that draws – combining the power of technology with the tactile expressivity of the pen or brush.
+          <br />
+          <br />
+          Learn more about  <a href="http://totallylegitllc.com/passable/">Passable</a>.
         </p>
 
         <div className="map-container">
           <IFrame
             title="map-frame"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2690.0046390790008!2d-122.339435023607!3d47.60659947118977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906b355e695455%3A0xd309dae7912449f1!2sThe%20Studio%20at%202%2BU!5e0!3m2!1sen!2sus!4v1703834340104!5m2!1sen!2sus"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.683115219363!2d-122.3216959236067!3d47.61285107119048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906b53128e0543%3A0xc491674b05d0d222!2sPassable!5e0!3m2!1sen!2sus!4v1707091115782!5m2!1sen!2sus"
             width="100%"
             height="auto"
           />
+          {/* <IFrame
+            title="map-frame"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2690.0046390790008!2d-122.339435023607!3d47.60659947118977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906b355e695455%3A0xd309dae7912449f1!2sThe%20Studio%20at%202%2BU!5e0!3m2!1sen!2sus!4v1703834340104!5m2!1sen!2sus"
+            width="100%"
+            height="auto"
+          /> */}
         </div>
       </section>
 
