@@ -2,6 +2,7 @@ import './App.scss'
 import { ReactComponent as Logo } from './logo.svg'
 // import CountdownTimer from './components/CountdownTimer'
 import { IFrame } from './components/IFrame'
+import plotterImg from './images/Plotter3.jpg'
 
 function App() {
   return (
@@ -44,6 +45,9 @@ function App() {
 
         <h2>Plotter Party</h2>
         <h3>Robots that draw 🤖✒️</h3>
+
+        {/* image */}
+        <img src={plotterImg} alt="Plotter plotting spiral curves" />
 
         {/* <div className="emoji">💻 🎨 💾 🖌 🎵</div> */}
         {/* <div className="emoji">🤖✒️ Robots that draw</div> */}
