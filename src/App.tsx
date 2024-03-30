@@ -1,8 +1,8 @@
-import './App.scss'
-import { ReactComponent as Logo } from './logo.svg'
+import "./App.scss";
+import Logo from "./logo.svg?react";
 // import CountdownTimer from './components/CountdownTimer'
-import { IFrame } from './components/IFrame'
-import plotterImg from './images/Plotter3.jpg'
+import { IFrame } from "./components/IFrame";
+import plotterImg from "./images/Plotter3.jpg";
 
 function App() {
   return (
@@ -62,11 +62,10 @@ function App() {
             target="_blank"
             rel="noreferrer"
           >
-            {' '}
+            {" "}
             <br />
             Passable <br />
             1005 E Union St, Seattle
-
           </a>
           <br />
         </div>
@@ -99,14 +98,17 @@ function App() {
       <section className="directions centered copy">
         <h3>About/Directions</h3>
         <p>
-          Organized by Passable and Seattle Creative Code,
-          this event showcases the work of local plotter artists/enthusiasts, with live plotting.
+          Organized by Passable and Seattle Creative Code, this event showcases
+          the work of local plotter artists/enthusiasts, with live plotting.
           <br />
           <br />
-          A plotter is a drawing machine that produces vector graphics drawings or paintings. Think of a robot that draws – combining the power of technology with the tactile expressivity of the pen or brush.
+          A plotter is a drawing machine that produces vector graphics drawings
+          or paintings. Think of a robot that draws – combining the power of
+          technology with the tactile expressivity of the pen or brush.
           <br />
           <br />
-          Learn more about  <a href="http://totallylegitllc.com/passable/">Passable</a>.
+          Learn more about{" "}
+          <a href="http://totallylegitllc.com/passable/">Passable</a>.
         </p>
 
         <div className="map-container">
@@ -132,7 +134,7 @@ function App() {
         <a href=""></a>.
       </div> */}
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
