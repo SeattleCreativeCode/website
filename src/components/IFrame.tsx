@@ -1,11 +1,11 @@
 interface IFrameProps {
-  src: string
-  height: string
-  width: string
-  title: string
+  src: string;
+  height: string;
+  width: string;
+  title: string;
 }
 
-export function IFrame(props: IFrameProps) {
+function IFrame(props: IFrameProps) {
   return (
     <div>
       <iframe
@@ -15,5 +15,7 @@ export function IFrame(props: IFrameProps) {
         width={props.width}
       />
     </div>
-  )
+  );
 }
+
+export default IFrame;

@@ -1,7 +1,37 @@
-body {
+body,
+#root,
+html {
   // background-color:  #282c34;
   background-color: #000;
   color: white;
+  margin: 0;
+  padding: 0;
+  font-family: "Inconsolata", monospace;
+  font-weight: 300;
+  font-size: 1.5vw;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+article,
+header {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+}
+
+p + p {
+  margin-top: 1em;
+}
+
+a {
+  color: #f3c438;
 }
 
 .app {
@@ -13,13 +43,10 @@ body {
   overflow: hidden;
 
   display: grid;
-  grid-template-columns: repeat(3, calc(100vw / 3) );
-  
+  grid-template-columns: repeat(3, calc(100vw / 3));
+
   padding: 0;
   margin: 0;
-  font-family: 'Inconsolata', monospace;
-  font-weight: 300;
-  font-size: 2vw;
 
   a {
     text-decoration: none;
@@ -54,14 +81,14 @@ body {
   }
 
   .copy {
-    font-size: .7em;
+    font-size: 0.7em;
     text-align: left;
   }
 
   header {
     background-color: black;
-    padding: 1em;  
-    
+    padding: 1em;
+
     .app-title-image {
       width: 100%;
       margin: 2em 0;
@@ -109,7 +136,7 @@ body {
 
       .emoji {
         font-size: 1.5em;
-        margin: .5em 0;
+        margin: 0.5em 0;
       }
 
       .info {
@@ -117,21 +144,21 @@ body {
         // font-size: 1.5em;
       }
 
-      .rsvp-button {    
+      .rsvp-button {
         background-color: white;
         color: rgb(30, 30, 30);
-        padding: .5em 1em;
+        padding: 0.5em 1em;
 
         border-radius: 0.25em;
 
         text-decoration: none;
-    
+
         display: inline-block;
         margin: 1em;
         text-align: center;
         font-weight: 700;
         font-size: 1em;
-    
+
         &:hover {
           background-color: rgb(248, 207, 4);
           color: rgb(0, 0, 0);
@@ -172,6 +199,4 @@ body {
       font-size: 1em;
     }
   }
-
-
 }

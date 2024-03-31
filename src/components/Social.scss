@@ -1,0 +1,11 @@
+.social {
+  align-self: center;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: row;
+  gap: 0.75em;
+
+  a {
+    display: block;
+  }
+}
