@@ -6,7 +6,7 @@ import "./Social.scss";
 const Social: React.FC<SocialProps> = () => {
   return (
     <IconContext.Provider value={{ color: "white", size: "2vw" }}>
-      <div class="social">
+      <div className="social">
         <a href="https://www.instagram.com/seattlecreativecode/">
           <FaInstagram />
         </a>
