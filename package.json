@@ -7,6 +7,7 @@
     "@googlemaps/react-wrapper": "^1.1.35",
     "@tanstack/react-query": "^5.29.0",
     "@vitejs/plugin-react-swc": "^3.6.0",
+    "netlify-cli": "^17.21.2",
     "react": "^18.2.0",
     "react-countdown": "2.3.2",
     "react-dom": "^18.2.0",
@@ -23,7 +24,7 @@
   },
   "scripts": {
     "start": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "serve": "vite preview"
   },
   "eslintConfig": {

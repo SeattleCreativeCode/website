@@ -4,7 +4,7 @@ interface Props {
   location: string;
 }
 
-const Location: React.FC = ({ location }: Props) => {
+const Location: React.FC<Props> = ({ location }: Props) => {
   switch (location) {
     case "TWO_PLUS_U":
       return (

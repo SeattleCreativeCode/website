@@ -1,11 +1,11 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import "./EventTeaser.scss";
 import MapFrame, { MapKind } from "./MapFrame";
 
 type EventTeaserProps = {
   title: string;
   date: Date;
-  address: string;
+  address: ReactElement;
   map: MapKind;
 };
 

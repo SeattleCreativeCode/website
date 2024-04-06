@@ -12,7 +12,7 @@ type Props = {
   time: string;
 };
 
-const Event: React.FC = ({
+const Event: React.FC<Props> = ({
   location,
   mapKind: kind,
   description,
@@ -22,7 +22,7 @@ const Event: React.FC = ({
 }: Props) => {
   let mapKind = mapKindFromString(kind);
   if (mapKind === null) {
-    return undefined;
+    return null;
   }
 
   return (

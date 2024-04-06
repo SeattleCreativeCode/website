@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Landing from "./pages/landing";
 import EventSingle from "./pages/event-single";
@@ -17,7 +16,7 @@ const router = createBrowserRouter([
   { path: "events/:event/:date", element: <EventSingle /> },
 ]);
 
-const container = document.getElementById("root");
+const container = document.getElementById("root")!;
 const root = createRoot(container);
 const queryClient = new QueryClient();
 

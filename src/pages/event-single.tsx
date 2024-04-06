@@ -13,6 +13,14 @@ const EventSingle: React.FC = (props) => {
     params.event,
     params.date
   );
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
+  if (isError || !event) {
+    return <div>Error: {error?.message}</div>;
+  }
+
   return (
     <div className="event">
       <header>

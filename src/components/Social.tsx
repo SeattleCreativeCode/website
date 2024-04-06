@@ -3,6 +3,8 @@ import { IconContext } from "react-icons";
 import { FaInstagram, FaDiscord } from "react-icons/fa6";
 import "./Social.scss";
 
+type SocialProps = {};
+
 const Social: React.FC<SocialProps> = () => {
   return (
     <IconContext.Provider value={{ color: "white", size: "2vw" }}>

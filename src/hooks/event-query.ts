@@ -8,9 +8,10 @@ async function getEvent(eventId: string) {
     return response.json();
 }
 
-function useEventQuery(eventName: string, eventDate: string) {
+    functions = "functions"
+    function useEventQuery(eventName: string | undefined, eventDate: string | undefined) {
     const eventId = `${eventName}/${eventDate}.json`;
-    const { data, isLoading, isError, error } = useQuery({ queryKey: ['event', eventId], queryFn: () => getEvent(eventId) });
+    const { data, isLoading, isError, error } = useQuery({ queryKey: ['event', eventId], enabled: Boolean(eventName) && Boolean(eventDate), queryFn: () => getEvent(eventId)});
 
     return {
         event: data,
