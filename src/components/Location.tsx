@@ -11,7 +11,7 @@ const Location: React.FC<Props> = ({ location }: Props) => {
         <>
           2+U Building
           <br />
-          1201 2nd Ave
+          1203 2nd Ave
           <br />
           Seattle, WA 98101
         </>
