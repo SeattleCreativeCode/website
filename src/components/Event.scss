@@ -1,0 +1,51 @@
+.event-details {
+  display: flex;
+  flex-direction: column;
+
+  article,
+  aside {
+    padding-top: 1.33rem;
+  }
+
+  .location {
+    margin-bottom: 1.33rem;
+  }
+}
+
+.event-container {
+  align-self: center;
+  padding: 1.33rem;
+
+  & > header {
+    padding: 0;
+    margin: 0;
+
+    h1 {
+      font-size: 2.66rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    h2 {
+      font-size: 1rem;
+      color: #2ecbfe;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .event-container {
+    header {
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  }
+  .event-details {
+    display: grid;
+    grid-template-columns: 35vw auto;
+    column-gap: 5em;
+    align-items: flex-start;
+  }
+}
