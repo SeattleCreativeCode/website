@@ -7,7 +7,7 @@ type SocialProps = {};
 
 const Social: React.FC<SocialProps> = () => {
   return (
-    <IconContext.Provider value={{ color: "white", size: "2vw" }}>
+    <IconContext.Provider value={{ color: "white", size: "2em" }}>
       <div className="social">
         <a href="https://www.instagram.com/seattlecreativecode/">
           <FaInstagram />

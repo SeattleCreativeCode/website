@@ -1,11 +1,11 @@
 import "./landing.scss";
 import React from "react";
 import EventTeaser from "../components/EventTeaser";
-import Logo from "../logo.svg?react";
 import { isDatePast } from "../utils/DateUtils";
+import Logo from "../logo.svg?react";
 import Nav from "../components/Nav";
-import { MapKind } from "../components/MapFrame";
 import Social from "../components/Social";
+import { MapKind } from "../components/MapFrame";
 import { Link } from "react-router-dom";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
@@ -42,7 +42,7 @@ const Landing: React.FC = () => {
               trigger={
                 <span className="example">code or node-based tools</span>
               }
-              position="center center"
+              position="bottom center"
               closeOnDocumentClick
             >
               Examples include but are not limited to:
