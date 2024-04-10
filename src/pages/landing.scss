@@ -55,7 +55,8 @@
 
 .example {
   cursor: help;
-  text-decoration: underline solid #2ecbfe;
+  background-color: #2ecbfe;
+  color: black;
 }
 
 .popup-content {
@@ -84,6 +85,8 @@
     .example {
       cursor: help;
       text-decoration: underline dotted #2ecbfe;
+      background-color: transparent;
+      color: inherit;
     }
 
     .popup-content {
