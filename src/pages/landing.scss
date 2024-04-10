@@ -55,6 +55,7 @@
 
 .example {
   cursor: help;
+  font-weight: bold;
   background-color: #2ecbfe;
   color: black;
 }
@@ -87,6 +88,7 @@
       text-decoration: underline dotted #2ecbfe;
       background-color: transparent;
       color: inherit;
+      font-weight: inherit;
     }
 
     .popup-content {
