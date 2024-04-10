@@ -9,7 +9,7 @@ const Location: React.FC<Props> = ({ location }: Props) => {
     case "TWO_PLUS_U":
       return (
         <>
-          2+U Building
+          The Studio at 2+U
           <br />
           1203 2nd Ave
           <br />
