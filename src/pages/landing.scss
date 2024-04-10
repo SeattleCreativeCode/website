@@ -55,7 +55,7 @@
 
 .example {
   cursor: help;
-  text-decoration: underline dotted #2ecbfe;
+  text-decoration: underline solid #2ecbfe;
 }
 
 .popup-content {
@@ -79,6 +79,11 @@
 
     header {
       padding-left: 2vw;
+    }
+
+    .example {
+      cursor: help;
+      text-decoration: underline dotted #2ecbfe;
     }
 
     .popup-content {
