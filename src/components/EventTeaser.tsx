@@ -1,11 +1,12 @@
 import React, { ReactElement } from "react";
 import "./EventTeaser.scss";
 import MapFrame, { MapKind } from "./MapFrame";
+import Location from "./Location";
 
 type EventTeaserProps = {
   title: string;
   date: Date;
-  address: ReactElement;
+  address: string;
   map: MapKind;
 };
 
@@ -24,7 +25,9 @@ const EventTeaser: React.FC<EventTeaserProps> = ({
       <p className="event-date">{date.toDateString()}</p>
       {children}
       <MapFrame kind={map} />
-      <p className="event-address">{address}</p>
+      <p className="event-address">
+        <Location location={address} />
+      </p>
     </div>
   );
 };

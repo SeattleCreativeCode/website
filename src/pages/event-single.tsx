@@ -1,6 +1,6 @@
 import "./event-single.scss";
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import useEventQuery from "../hooks/event-query";
 import Event from "../components/Event";
 import Logo from "../logo.svg?react";
@@ -24,7 +24,9 @@ const EventSingle: React.FC = (props) => {
   return (
     <div className="event">
       <header>
-        <Logo />
+        <Link to="/">
+          <Logo />
+        </Link>
         <Nav />
         <Social />
       </header>
@@ -35,6 +37,9 @@ const EventSingle: React.FC = (props) => {
         description={event?.description}
         date={event?.date}
         time={event?.time}
+        image={event?.image}
+        call={event?.call}
+        rsvp={event?.rsvp}
       />
     </div>
   );

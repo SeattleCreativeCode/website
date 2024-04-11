@@ -55,7 +55,9 @@
 
 .example {
   cursor: help;
-  text-decoration: underline dotted #2ecbfe;
+  font-weight: bold;
+  background-color: #2ecbfe;
+  color: black;
 }
 
 .popup-content {
@@ -79,10 +81,14 @@
 
     header {
       padding-left: 2vw;
+    }
 
-      .link {
-        padding-left: 3.2rem;
-      }
+    .example {
+      cursor: help;
+      text-decoration: underline dotted #2ecbfe;
+      background-color: transparent;
+      color: inherit;
+      font-weight: inherit;
     }
 
     .popup-content {

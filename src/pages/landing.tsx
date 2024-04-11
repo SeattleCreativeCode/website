@@ -20,7 +20,9 @@ const Landing: React.FC = () => {
   return (
     <div id="Landing">
       <header>
-        <Logo />
+        <Link to="/">
+          <Logo />
+        </Link>
         <Nav />
         <Social />
       </header>
@@ -82,15 +84,7 @@ const Landing: React.FC = () => {
               <EventTeaser
                 date={nextEventDate}
                 title="CodeCraft"
-                address={
-                  <>
-                    2+U Building
-                    <br />
-                    1203 2nd Ave
-                    <br />
-                    Seattle, WA 98101
-                  </>
-                }
+                address="TWO_PLUS_U"
                 map={MapKind.TWO_PLUS_U}
               >
                 <Link to="/events/codecraft/2024-05-25">Learn More</Link>
